@@ -1,0 +1,22 @@
+$primary : #53cccc;
+$secondary : #293f6c;
+
+
+nav{
+    background-color:   #53cccc;
+    padding: 15px 0 0;
+    ul{
+    display: flex;
+    padding: 0;
+    margin:0;
+     li{
+       
+        list-style: none;
+       a{
+        padding: 0 12px;
+        color: #293f6c;
+        text-decoration: none;
+       }
+    }
+}
+}

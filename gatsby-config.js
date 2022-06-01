@@ -6,5 +6,21 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  
+  plugins: [`gatsby-plugin-sass`, `gatsby-transformer-remark`,
+      
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `Projects`,
+      path: `${__dirname}/src/Projects/`,
+    },
+  },
+ 
+],
+
+  siteMetadata: {
+    title: 'learning gatsby',
+    description:'web dev portfolio',
+    }
 }
