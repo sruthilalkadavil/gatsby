@@ -1,0 +1,24 @@
+ 
+
+.home-web{
+    &__heading{
+        padding-top: 24%;  
+        
+    }
+    &__btncolor{
+        color: #fff !important;
+    background-color: #53cccc !important;
+    border-color: #53cccc !important;
+    }
+    &__imagestl{
+        top: 29px;
+    }
+}
+.Footer-Web{
+    padding-top:5%;
+}
+.img-grid img{
+    width:100%;
+    height: 400px;
+    margin-bottom: 10px;
+}

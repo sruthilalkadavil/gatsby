@@ -1,3 +1,15 @@
  @use 'variable';
  @use 'navbar';
+ @use 'home';
+ @use 'page';
+
+.page-web{
+    .btn-info{
+        margin-right: 13px;
+    }
+    &__countbtn{
+        padding-top: 14px;
+        padding-left: 10px;
+    }
+}
  

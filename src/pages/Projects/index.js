@@ -1,22 +1,23 @@
-import { graphql, Link } from 'gatsby';
+import { graphql} from 'gatsby';
 import React from 'react';
 import Layout from '../components/Layout';
 
 
 export default function Project({data}){
      
-    const projects = data.allMarkdownRemark.nodes
+    const projects = data.projects.nodes
     return (
         <Layout>
         <div>
             <div className="container">
                 <div className="row">
                    
-   
-        {projects.map(project => (
-              <div className="col-md-4">
-            <Link to = {"../Projects" + project.frontmatter.slug} key={project.id}>
+ 
 
+           
+{projects.map(project => (
+              <div className="col-md-4">
+          
               
                     <h1>
                         {project.frontmatter.title}
@@ -24,8 +25,13 @@ export default function Project({data}){
                     <p>
                     {project.frontmatter.stack}
                     </p>
+                    <p>
+                   
+                    <div dangerouslySetInnerHTML={{ __html: project.html }} />
+                    </p>
+                     
                 
-            </Link>
+            
             </div>
 
         ))}
@@ -39,7 +45,7 @@ export default function Project({data}){
  
 export const query = graphql`
 query Projectpage {
-    allMarkdownRemark {
+    projects:  allMarkdownRemark {
       nodes {
         frontmatter {
           slug
@@ -47,6 +53,7 @@ query Projectpage {
           title
         }
         id
+        html
       }
     }
   }

@@ -1,9 +1,11 @@
 ---
-title: angular js
+title: JavaScript 
 stack: typescript
 slug: web-angular
+
+thumb: ../images/thumbs/angular.jpeg
 ---
 
 
-# Angular
-Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces
+### JavaScript 
+JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn.
